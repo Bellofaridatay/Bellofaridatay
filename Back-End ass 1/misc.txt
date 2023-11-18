@@ -1,3 +1,26 @@
+Index php:
+
+<?php
+include('score.php');
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Score Range</title>
+</head>
+<body>
+    <h2>Student Score and Range</h2>
+
+    <p>Student Score: <?php echo $studentScore; ?></p>
+    <p>Score Range: <?php echo $scoreRange; ?></p>
+</body>
+</html>
+
+
+score php:
 <?php
 // Function to get the score range
 function getScoreRange($score) {
