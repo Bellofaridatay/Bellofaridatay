@@ -17,6 +17,8 @@ echo '<br>The multiplication is ' . $mult;
 echo '<br>The Division is ' . $div;
 echo '<br>The Modulus is ' . $mod;
 
+
+
 /*
 
 Area & Perimeter of a Square
