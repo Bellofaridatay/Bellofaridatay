@@ -5,7 +5,7 @@ $userdetails = array(
         "firstname"=>"Faridat",
         "lastname"=>"Bello",
         "age"=>5,
-        "cars"=>array("Benz","Rangerover",'Toyota'),
+        "cars"=>array("Benz","Rangerover",'Toyota','BMW'),
     ),
 
 
