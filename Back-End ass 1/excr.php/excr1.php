@@ -16,11 +16,11 @@ $permofrec = ($l + $w)*2;
 $areaofsq = $a * $a;
 $permofsq = 4 * $a;
 $areaofcrcl = $pi * $r* $r;
-$permofcrcl = 2 * $pi * $r
+$permofcrcl = 2 * $pi * $r;
 
 
-echo 'The area of a rectangle is ' . $areaofrec;
-echo '<br>The perimeter of rectangle is ' . $permofrec;
+print "The area of a rectangle is $areaofrec";
+print "<br>The perimeter of rectangle is $permofrec";
 echo 'The area of a square is ' . $areaofsq;
 echo '<br>The perimeter of square is ' . $permofsq;
 echo 'The area of a circle is ' . $areaofcrcl;
