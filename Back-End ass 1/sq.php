@@ -32,7 +32,7 @@ function test($data) {
 
 <h2>Area of a Square</h2>
 
-<form action="." method="post">
+<form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
 
   <label for="fname">Enter the Perimeter of the Square:</label><br>
   <input type="text" name="len" value="<?php if($per != -1)echo $per; ?>"><br>
