@@ -9,7 +9,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
 $per = test($_POST['len']);
 
-$area = $per * 2;
+$area = $per ** 2;
 $persq = $per * 4;
 
 //print("The area of the square is $area cm^2");
