@@ -2,8 +2,6 @@
 <html>
 <body>
 
-<h2></h2>
-
 
 
 <?php
@@ -25,7 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   <input type="number" name="numCourses" ><br>
 
   <input type="submit" value="Register"><br>
-
 
 </form> 
 
