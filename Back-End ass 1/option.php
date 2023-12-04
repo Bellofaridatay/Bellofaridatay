@@ -2,31 +2,47 @@
 <html>
 <body>
 
-<h2>Select the Geometry to Compute</h2>
+<h2></h2>
 
-<a href="sq.php">Square</a>
+<?php
+
+//$course = $_GET['course'];
 
 
+//print $course[$i]."<br>";
 
+if ($_SERVER["REQUEST_METHOD"]== "POST") {
+    $course = $_POST["course"];
 
-<!--
+    echo "<h2>Counting up to $countTo</h2>";
+    echo "<p>";
+
+    for ($i=0; $i<=$course; $i++) {
+
+       // $result=$course;
+        echo $i;
+    }
+    echo "</p>";
+
+}
+
+?>
+
+<a href="create.php"> Register</a>
 
 <form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
 
-  <label for="fname">Enter the length of the Square:</label><br>
-  <input type="text" name="len" value="<?php if($per != -1)echo $per; ?>"><br>
+  <label for="fname">Enter the amount of course you want to register:</label><br>
+  <input type="number" name="course" ><br>
 
-  <label for="fname">The Area of a Square is:</label><br>
-  <input type="text" value="<?php if($area != -1)echo $area; ?>"><br>
+  <input type="submit" value="register"><br>
 
-  <label for="fname">The Perimeter of a square is:</label><br>
-  <input type="text" value="<?php if($persq != -1)echo $persq; ?>"><br>
-
-  <input type="submit" value="Select"><br>
+  
 
 </form> 
 
--->
+
+
 
 
 </body>

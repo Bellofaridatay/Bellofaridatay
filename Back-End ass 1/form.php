@@ -10,13 +10,13 @@
 
 <form action="/create.php" method="post" style="max-width:500px;margin:auto">
   
-<h2>Create Account</h2>
+<h2>Enter the number of courses</h2>
 
   <div class="input-container">
     <i class="fa fa-user icon"></i>
-    <input class="input-field" type="text" placeholder="Username" name="uname" required>
+    <input class="input-field" type="text" placeholder="Courses" name="uname" required>
   </div>
-
+<!--
   <div class="input-container">
     <i class="fa fa-user icon"></i>
     <input class="input-field" type="text" placeholder="First Name" name="fname" required>
@@ -46,7 +46,7 @@
     <i class="fa fa-key icon"></i>
     <input class="input-field" type="password" placeholder="Confirm Password" name="cpword" required>
   </div>
-
+-->
   <button type="submit" class="btn">Create Account</button>
 </form>
 
