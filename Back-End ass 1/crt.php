@@ -3,24 +3,17 @@
 <body>
 
 
+
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 if ($_SERVER["REQUEST_METHOD"] == "POST")
-
     $numCourses = $_POST["numCourses"];
 
     echo "<h2>Course Registration</h2>";
-    //echo "<form method='post' action='"($_SERVER["PHP_SELF"])."'>";
-    
-    for ($i = 1; $i <= $numCourses; $i++) {
 
+    for ($i = 1; $i <= $numCourses; $i++) {
         echo "Course $i: <input type='text' name='course'><br>";
     }
-}
-   // echo "</form>";
-
-    
     
 ?>
 
@@ -30,7 +23,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST")
   <input type="number" name="numCourses" ><br>
 
   <input type="submit" value="Register"><br>
-
 
 </form> 
 
