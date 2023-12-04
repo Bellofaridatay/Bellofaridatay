@@ -2,19 +2,23 @@
 <html>
 <body>
 
-<h2></h2>
-
-
 
 <?php
-if ($_SERVER["REQUEST_METHOD"] == "POST")
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
     $numCourses = $_POST["numCourses"];
 
     echo "<h2>Course Registration</h2>";
-
+    //echo "<form method='post' action='"($_SERVER["PHP_SELF"])."'>";
+    
     for ($i = 1; $i <= $numCourses; $i++) {
+
         echo "Course $i: <input type='text' name='course'><br>";
     }
+}
+   // echo "</form>";
+
+    
     
 ?>
 
