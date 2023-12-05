@@ -6,8 +6,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-if ($_SERVER["REQUEST_METHOD"] == "POST")
-
     $numCourses = $_POST["numCourses"];
 
     echo "<h2>Course Registration</h2>";
