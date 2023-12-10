@@ -2,44 +2,37 @@
 <html>
 <body>
 
-<h2></h2>
 
 <?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
-//$course = $_GET['course'];
+    $numbCourses = $_POST["numbCourses"];
 
 
-//print $course[$i]."<br>";
+    echo "<h2>Course Registration</h2>";
+    //echo "<form method='post' action='"($_SERVER["PHP_SELF"])."'>";
+    
+    for ($i = 1; $i <= $numbCourses; $i++) {
 
-if ($_SERVER["REQUEST_METHOD"]== "POST") {
-    $courses = $_POST["course"];
+        echo "Course $i: <input type='text' name='course'><br>";
 
-    for ($i = 1; $i <= $courses; $i++)  {
 
-       //$result=$course;
-        echo $i;
-    }
 
-}
+     }
 
+   
+ }   
 ?>
-
-<a href="create.php"> Register</a>
 
 <form action="<?php $_SERVER['PHP_SELF']; ?>" method="post">
 
-  <label for="fname">Enter the amount of course you want to register:</label><br>
-  <input type="number" name="courses" ><br>
+  <label for="fname">Enter the number of courses you want to register:</label><br>
+  <input type="number" name="numbCourses" ><br>
 
-  <input type="submit" value="register"><br>
+  <input type="submit" value="Register"><br>
 
-  
 
 </form> 
-
-
-
-
 
 </body>
 </html>

@@ -26,7 +26,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "</form>";
 
     // Process the entered scores and calculate overall score
-    if (isset($_POST["c ourse"]) && isset($_POST["score"])) {
+    if (isset($_POST["course"]) && isset($_POST["score"])) {
         $courses = $_POST["course"];
         $scores = $_POST["score"];
 
