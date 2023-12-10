@@ -4,10 +4,12 @@
 
 
 <?php
+
 if ($_SERVER["REQUEST_METHOD"] == "POST")
 
     $numbCourses = $_POST["numbCourses"];
     $totalScore = 0;
+
 
     echo "<h2>Course Registration</h2>";
     //echo "<form method='post' action='"($_SERVER["PHP_SELF"])."'>";
