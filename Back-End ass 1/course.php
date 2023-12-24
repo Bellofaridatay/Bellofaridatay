@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo " Score: ";
         echo "<input type='number' name='score[]' placeholder='Enter Score' min='0' max='100'><br>";
     }
-
+}
     echo "<br><input type='submit' value='Calculate Overall Score'>";
     echo "</form>";
 
