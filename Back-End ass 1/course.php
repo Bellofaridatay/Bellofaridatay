@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Course Registration and Score Calculation</title>
+<title>Course Registration and Score Calculation</title>
 </head>
 <body>
 
@@ -21,12 +21,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo " Score: ";
         echo "<input type='number' name='score[]' placeholder='Enter Score' min='0' max='100'><br>";
     }
-}
+
     echo "<br><input type='submit' value='Calculate Overall Score'>";
     echo "</form>";
 
     // Process the entered scores and calculate overall score
-    if (isset($_POST["c ourse"]) && isset($_POST["score"])) {
+    if (isset($_POST["course"]) && isset($_POST["score"])) {
         $courses = $_POST["course"];
         $scores = $_POST["score"];
 
