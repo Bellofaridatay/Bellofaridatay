@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-    Enter the number of courses you want to register: <input type="number" name="numCourses" min="1">
+    Enter the number of courses you want to register: <input type="number" name="numCourses" min="1" required>
     <input type="submit" value="Submit">
 </form>
 
