@@ -16,7 +16,7 @@
     <i class="fa fa-user icon"></i>
     <input class="input-field" type="text" placeholder="Courses" name="uname" required>
   </div>
-<!--
+
   <div class="input-container">
     <i class="fa fa-user icon"></i>
     <input class="input-field" type="text" placeholder="First Name" name="fname" required>
@@ -46,7 +46,7 @@
     <i class="fa fa-key icon"></i>
     <input class="input-field" type="password" placeholder="Confirm Password" name="cpword" required>
   </div>
--->
+
   <button type="submit" class="btn">Create Account</button>
 </form>
 

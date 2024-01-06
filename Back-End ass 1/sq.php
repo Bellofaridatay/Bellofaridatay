@@ -1,9 +1,11 @@
 <?php
 
+include('functionClass.php');
+
 $pi = 3.142;
 
 
-$area = $len = $persq = "";
+$area = $len = $persq = $areasq = "";
 $areac = $circum = $rad = "";
 
 
@@ -23,7 +25,7 @@ if($len == "")$len = $persq = $areasq = "";
 
 
   else{
-    $areasq =$len ** 2;
+    $areasq = powFxn($len,3);
     $persq = 2 * $len;
   }
 
@@ -49,6 +51,11 @@ function test($data) {
 
 
 ?>
+
+
+
+
+
 
 
 <!DOCTYPE html>
