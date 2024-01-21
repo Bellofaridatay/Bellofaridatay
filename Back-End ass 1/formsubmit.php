@@ -19,8 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $dbc = conn();
 
        // $query = 'SELECT * FROM userinfo WHERE 1';
-      // $query = "INSERT INTO userinfo (LastName,FirstName,MiddleName,age,userid) VALUES ($lname,$fname,$oname,$age,$uname)";
-
+      
       //INSERT INTO userinfo (LastName, FirstName, MiddleName, age, userid) VALUES ('abdul','yusuf', 'o', '21','n1')
 
         $query = "INSERT INTO userinfo (LastName, FirstName, MiddleName, age, userid) VALUES ('" . $lname . "','" . $fname . "','" . $oname . "','" . $age. "','". $uname."')";
