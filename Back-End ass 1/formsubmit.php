@@ -2,6 +2,26 @@
 
 include("config.php");
 
+function query_fxn($uid){
+
+  $dbc = conn();
+
+  $query = "SELECT FirstName FROM userinfo WHERE userid='".$uid."'";
+
+  $res = $dbc->query($query);
+
+  if ($res->num_rows > 0) {
+    while($row= $res->fetch_assoc()) $fname = $row["FirstName"];
+
+   // $val = [TRUE,$fname]
+
+      return array(FALSE,$fname);
+    }
+
+       else return array(TRUE);
+
+}
+
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
@@ -19,8 +39,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $dbc = conn();
 
        // $query = 'SELECT * FROM userinfo WHERE 1';
-      
+      // $query = "INSERT INTO userinfo (LastName,FirstName,MiddleName,age,userid) VALUES ($lname,$fname,$oname,$age,$uname)";
+
       //INSERT INTO userinfo (LastName, FirstName, MiddleName, age, userid) VALUES ('abdul','yusuf', 'o', '21','n1')
+
+      $res = query_fxn($uname);
+
+
+      if ($res[0]){
+  
 
         $query = "INSERT INTO userinfo (LastName, FirstName, MiddleName, age, userid) VALUES ('" . $lname . "','" . $fname . "','" . $oname . "','" . $age. "','". $uname."')";
 
@@ -31,11 +58,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
           //  header("Location: login.php");
 
          }
-        
+      } 
+         
+        else echo $res[1].",already exists!!!!";
 
-
-
-    }
+             
+    } 
 
     else {
 
