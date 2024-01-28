@@ -31,7 +31,7 @@ function query_fxn($uname){
   
       if($uname == $pword){
   
-          $dbc = conn();
+         // $dbc = conn();
 
 
           $res = query_fxn($uname);

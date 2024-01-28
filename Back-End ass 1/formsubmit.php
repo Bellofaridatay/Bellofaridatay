@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       if ($res[0]){
   
 
-        $query = "INSERT INTO userinfo (LastName, FirstName, MiddleName, age, userid) VALUES ('" . $lname . "','" . $fname . "','" . $oname . "','" . $age. "','". $uname."')";
+  $query = "INSERT INTO userinfo (LastName, FirstName, MiddleName, age, userid, pass) VALUES ('" . $lname . "','" . $fname . "','" . $oname . "','" . $age. "','" . $uname . "','" . $pword. "')";
 
          if($dbc->query($query)) {
 

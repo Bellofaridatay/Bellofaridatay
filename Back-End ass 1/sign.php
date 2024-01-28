@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<form action="/signin.php" method="post" style="max-width:500px;margin:auto">
+<form action="/sign1.php" method="post" style="max-width:500px;margin:auto">
   <h2>Signin Form</h2>
   <div class="input-container">
    <i class="fa fa-user icon"></i>
