@@ -11,6 +11,7 @@
 
 <form action="/formsubmit.php" method="post" style="max-width:500px;margin:auto">
   <h2>Register Form</h2>
+  
   <div class="input-container">
    <i class="fa fa-user icon"></i>
     <input class="input-field" type="text" placeholder="Username" name="uname" required>

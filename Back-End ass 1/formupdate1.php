@@ -1,11 +1,37 @@
 <?php
 
 session_start();
+include("config.php");
 
-//$uname = $_SESSION['uname'];
+$uname = $_SESSION['uname'];
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  
+  $fname = test($_POST['fname']);
+  $lname = test($_POST['lname']);
+  $oname = test($_POST['oname']);
+  $age = test($_POST['age']);
+
+  $query = "UPDATE userinfo SET FirstName='".$fname."', LastName='".$lname."', MiddleName='".$oname."', age='".$age."' WHERE userid='".$uname."'";
+  
+  $dbc = conn();
+  
+  $res = $dbc->query($query);
+
+  if($res)echo "$fname, profile updated successfully!!!";
+  
+
+}
 
 
 
+
+function test($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
 
 ?>
 
@@ -25,23 +51,23 @@ session_start();
 
   <div class="input-container">
     <i class="fa fa-user icon"></i>
-    <input class="input-field" type="text" placeholder="<?php echo $_SESSION['fname']; ?>" name="fname" required>
+    <input class="input-field" type="text" value="<?php echo $_SESSION['fname']; ?>" name="fname" required>
   </div>
 
   <div class="input-container">
     <i class="fa fa-user icon"></i>
-    <input class="input-field" type="text" placeholder="<?php echo $_SESSION['oname'];?>" name="oname">
+    <input class="input-field" type="text" value="<?php echo $_SESSION['oname'];?>" name="oname">
   </div>
 
   <div class="input-container">
     <i class="fa fa-user icon"></i>
-    <input class="input-field" type="text" placeholder="<?php echo $_SESSION['lname']; ?>" name="lname" required>
+    <input class="input-field" type="text" value="<?php echo $_SESSION['lname']; ?>" name="lname" required>
   </div>
 
 
   <div class="input-container">
     <i class="fa fa-envelope icon"></i>
-    <input class="input-field" type="number" placeholder="<?php echo $_SESSION['age']; ?>" name="age" required>
+    <input class="input-field" type="number" value="<?php echo $_SESSION['age']; ?>" name="age" required>
   </div>
   
 
