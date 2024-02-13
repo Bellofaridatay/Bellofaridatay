@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form action="/create.php" method="post" style="max-width:500px;margin:auto">
+<form action="/formsubmit.php" method="post" style="max-width:500px;margin:auto">
   
 <h2>Enter the number of courses</h2>
 

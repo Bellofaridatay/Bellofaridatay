@@ -1,8 +1,0 @@
-<?php  
-
-
-include('sq.php')
-
-
-
-?>

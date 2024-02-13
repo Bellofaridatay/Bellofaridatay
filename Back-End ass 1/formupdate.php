@@ -16,7 +16,7 @@ if ($res->num_rows > 0) {
   while($row= $res->fetch_assoc()) {
     $fname = $row["FirstName"];
     $oname = $row["MiddleName"];
-    $lname = $row["LastName"];
+   $lname = $row["LastName"];
     $age = $row["age"];
   }
 }
