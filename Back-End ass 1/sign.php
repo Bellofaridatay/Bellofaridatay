@@ -22,7 +22,6 @@
   </div>
 
   <button type="submit" class="btn">sign in</button>
-  <button type="submit" class="btn">delete user</button>
 
 
 </form>
