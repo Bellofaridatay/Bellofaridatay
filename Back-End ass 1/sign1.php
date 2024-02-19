@@ -7,7 +7,7 @@ function query_fxn($uname){
 
     $dbc = conn();
   
-    $query = "SELECT * FROM userinfo WHERE userid='".$uname."'";
+    $query = "SELECT * FROM userinfo WHERE uname='".$uname."'";
   
     $res = $dbc->query($query);
   
@@ -42,6 +42,9 @@ function query_fxn($uname){
     
 
     else{
+
+         $pword = md5($pword);
+
          if($res[2] == $pword){
 
             echo 'Welcome, ' . $res[1] . '. Your age is ' . $res[3];

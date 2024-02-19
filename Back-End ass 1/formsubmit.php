@@ -38,7 +38,7 @@ function gen_userid(){
   $res = $dbc->query($query);
 
   if ($res->num_rows > 0);
-  
+
   else return $uid;
  
   $i++;
@@ -76,6 +76,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       if ($res[0]){
 
         $uid = gen_userid();
+
+        $pword = md5($pword);
 
         $query = "INSERT INTO userinfo (LastName, FirstName, MiddleName, age, pass, email, userid, uname) VALUES ('" . $lname . "','" . $fname . "','" . $oname . "','" . $age . "','" . $pword . "','" .  $email . "','" . $uid . "','" .$uname . "')";
 
