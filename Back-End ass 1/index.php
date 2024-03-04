@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<form action="/userid.php" method="post" style="max-width:500px;margin:auto">
+<form action="/createuser.php" method="post" style="max-width:500px;margin:auto">
   <h2>Register Form</h2>
   
   <div class="input-container">

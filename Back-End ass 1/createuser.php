@@ -79,7 +79,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         $pword = md5($pword);
 
-        $query = "INSERT INTO userinfo (LastName, FirstName, MiddleName, age, pass, email, userid, uname) VALUES ('" . $lname . "','" . $fname . "','" . $oname . "','" . $age . "','" . $pword . "','" .  $email . "','" . $uid . "','" .$uname . "')";
+        $query = "INSERT INTO userinfo (LastName, FirstName, MiddleName, age, pword, email, userid, uname) VALUES ('" . $lname . "','" . $fname . "','" . $oname . "','" . $age . "','" . $pword . "','" .  $email . "','" . $uid . "','" .$uname . "')";
 
          if($dbc->query($query)) {
 
